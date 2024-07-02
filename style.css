@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/*styling for the welcome 0r signin page*/
+
+.welcome-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DAE0F2;
+}
+.welcome-container{
+    display: flex;
+    padding: 15px 60px;
+    height: 100vh;
+}
+.welcome-img{
+margin-right: 16%;
+}
+.welcome-form{
+    margin-top: 15%;
+}
+.welcome-logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.welcome-logo span{
+    font-family: 'Lato', sans-serif;
+    color: #284CCC;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+}
+.welcome-form h3{
+    color: #000100;
+font-family:'Lato', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 45.2px;
+letter-spacing: 0.4px;
+margin-bottom: 0;
+}
+.welcome-form p:first-of-type{
+    color: #544F53;
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+letter-spacing: -0.165px;
+}
+.welcome-form label{
+    color: #000100;
+font-family: 'Lato', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.165px;
+margin-bottom: 30px;
+}
+.welcome-form input{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.welcome-form input:placeholder-shown{
+    color: #B8B8B8;
+    font-family:  "Mukta", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.input-container{
+    position: relative;
+}
+.input-container img{
+    position: absolute;
+    right: 0 ;
+    top: 52px;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+}
+.button-container label{
+    text-align: end;
+    color: #544F53;
+}
+.button-container button{
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    color: #DAE0F2;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #284CCC;
+}
+.button-container button:hover{
+    background-color: #DAE0F2;
+    color: #284CCC;
+}
+.welcome-form div p:last-of-type{
+    color: #000100;
+text-align: center;
+font-family:'Lato', sans-serif;
+font-size: 22px;
+font-weight: 600;
+}
+.welcome-form div:last-of-type a{
+    text-decoration: none;
+    color: #000100;
+}
+.welcome-form div:last-of-type a:hover{
+    color: #B8B8B8;
+    text-decoration: underline;
+}
+
+/*media query styling for the welcome 0r signin page*/
+@media(Max-width: 1200px) {
+    .welcome-img{
+        display: none;
+    }
+    .welcome-body{
+        background-image: url(assets/images/young-cheerful-woman-yellow-shirt-leaning-desk-with-notepad-papers-hand-while-joyfully-looking-camera-modern-office_574295-3824\ 3.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover; 
+        
+    }
+    .welcome-container{
+        display: block;
+    }
+    .welcome-logo{
+        justify-content: center;
+    }
+    .welcome-logo span{
+        font-size: 78px;
+        font-weight: 800;
+    }
+    .welcome-form h3{
+        font-size: 60px;
+        text-align: center;
+        color: white;
+    }
+    .welcome-form p:first-of-type{
+        font-size: 34px;
+        font-weight: 600;
+        color: white;
+    }
+
+}
