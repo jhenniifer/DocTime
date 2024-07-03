@@ -11,14 +11,18 @@
 }
 .welcome-container{
     display: flex;
-    padding: 15px 60px;
+    padding: 2% 9% 2% 5%;
     height: 100vh;
 }
 .welcome-img{
 margin-right: 16%;
 }
+.welcome-img img{
+    width: 100%
+}
 .welcome-form{
-    margin-top: 15%;
+    margin-top: 10%;
+    width: 50%;
 }
 .welcome-logo{
     display: flex;
@@ -28,14 +32,14 @@ margin-right: 16%;
 .welcome-logo span{
     font-family: 'Lato', sans-serif;
     color: #284CCC;
-    font-size: 48px;
+    font-size: 65px;
     font-style: normal;
     font-weight: 600;
 }
 .welcome-form h3{
     color: #000100;
 font-family:'Lato', sans-serif;
-font-size: 40px;
+font-size: 45px;
 font-style: normal;
 font-weight: 600;
 line-height: 45.2px;
@@ -45,7 +49,7 @@ margin-bottom: 0;
 .welcome-form p:first-of-type{
     color: #544F53;
 font-family: 'Lato', sans-serif;
-font-size: 20px;
+font-size: 22px;
 font-style: normal;
 font-weight: 400;
 line-height: 30px; /* 150% */
@@ -54,7 +58,7 @@ letter-spacing: -0.165px;
 .welcome-form label{
     color: #000100;
 font-family: 'Lato', sans-serif;
-font-size: 18px;
+font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -67,7 +71,7 @@ margin-bottom: 30px;
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 0 20px;
+    padding: 5px 20px;
     margin-top: 20px;
     margin-bottom: 25px;
 }
@@ -75,7 +79,7 @@ margin-bottom: 30px;
 .welcome-form input:placeholder-shown{
     color: #B8B8B8;
     font-family:  "Mukta", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -86,7 +90,7 @@ margin-bottom: 30px;
 .input-container img{
     position: absolute;
     right: 0 ;
-    top: 52px;
+    top: 60px;
 }
 .button-container{
     display: flex;
@@ -101,8 +105,8 @@ margin-bottom: 30px;
     border-radius: 10px;
     padding: 12px 0;
     color: #DAE0F2;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     background-color: #284CCC;
 }
 .button-container button:hover{
@@ -113,12 +117,13 @@ margin-bottom: 30px;
     color: #000100;
 text-align: center;
 font-family:'Lato', sans-serif;
-font-size: 22px;
-font-weight: 600;
+font-size: 24px;
+font-weight: 400;
 }
 .welcome-form div:last-of-type a{
     text-decoration: none;
     color: #000100;
+    font-weight: 600;
 }
 .welcome-form div:last-of-type a:hover{
     color: #B8B8B8;
@@ -126,7 +131,15 @@ font-weight: 600;
 }
 
 /*media query styling for the welcome 0r signin page*/
+
+/* 1200px */
 @media(Max-width: 1200px) {
+    .welcome-form{
+        width: 100%;
+    }
+    .welcome-container{
+        height: 100%;
+    }
     .welcome-img{
         display: none;
     }
@@ -151,11 +164,90 @@ font-weight: 600;
         font-size: 60px;
         text-align: center;
         color: white;
+        margin-top: 80px;
+        margin-bottom: 50px;
     }
     .welcome-form p:first-of-type{
         font-size: 34px;
         font-weight: 600;
         color: white;
+        margin-bottom: 15%;
+        text-align: center;
     }
+    .welcome-form label{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .welcome-form input{
+        padding: 20px 10px 20px 10px;
+    }
+    .welcome-form input:placeholder-shown{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .input-container img{
+        top: 80px;
+    }
+    .button-container button{
+        padding: 20px 0;  
+        font-size: 26px;
+        font-weight: 500  
+    }
+    .welcome-form div p:last-of-type{
+    font-size: 30px;
+    font-weight: 600;
+    }
+    
+}
 
+@media(Max-width: 600px){
+    .welcome-body{
+        background-size: cover;
+    }
+    
+   .welcome-logo span{
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .welcome-form h3{
+font-size: 40px;
+font-weight: 600;
+}
+.welcome-form p:first-of-type{
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: -0.165px;
+
+}
+.welcome-form label{
+font-size: 20px;
+font-weight: 600;
+}
+.welcome-form input{
+    width: 98%;
+    padding: 5px 5px 5px 5px;
+}
+.welcome-form div p:last-of-type{
+    font-size: 22px;
+    font-weight: 500;
+}
+.welcome-form div:last-of-type a{
+font-weight: 700;
+}
+.input-container img{
+    position: absolute;
+    right: 5px ;
+    top: 60px;
+}
+.button-container button{
+    padding: 10px 0;  
+    font-size: 26px;
+    font-weight: 500  
+}
+.welcome-form div p:last-of-type{
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
 }
