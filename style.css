@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
-/*styling for the welcome 0r signin page*/
+/*styling for the welcome 0r signin  and the sign up page*/
+/* They have very similar designs hence */
 
-.welcome-body{
+.welcome-body, .signup-body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,15 +15,27 @@
     padding: 2% 9% 2% 5%;
     height: 100vh;
 }
+.signup-container{
+    display: flex;
+    padding: 0 8% 0 0;
+    height: 100vh;
+}
 .welcome-img{
 margin-right: 16%;
+}
+.signup-img{
+    margin-right: 4%;
 }
 .welcome-img img{
     width: 100%
 }
+
 .welcome-form{
     margin-top: 10%;
     width: 50%;
+}
+.signup-body .welcome-form{
+    margin-top: 8%;
 }
 .welcome-logo{
     display: flex;
@@ -55,6 +68,10 @@ font-weight: 400;
 line-height: 30px; /* 150% */
 letter-spacing: -0.165px;
 }
+.signup-container .welcome-form p:first-of-type, .signup-container .welcome-form h3{
+    color: #000100;
+}
+
 .welcome-form label{
     color: #000100;
 font-family: 'Lato', sans-serif;
@@ -83,6 +100,9 @@ margin-bottom: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.signup-wlc{
+    display: none;
 }
 .input-container{
     position: relative;
@@ -130,17 +150,17 @@ font-weight: 400;
     text-decoration: underline;
 }
 
-/*media query styling for the welcome 0r signin page*/
+/*media query styling for the welcome 0r signin page and the signup page*/
 
 /* 1200px */
 @media(Max-width: 1200px) {
     .welcome-form{
         width: 100%;
     }
-    .welcome-container{
+    .welcome-container, .signup-container{
         height: 100%;
     }
-    .welcome-img{
+    .welcome-img, .signup-img{
         display: none;
     }
     .welcome-body{
@@ -148,10 +168,18 @@ font-weight: 400;
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover; 
-        
+    }
+    .signup-body{
+        background-image: url(assets/images/signup.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover 
     }
     .welcome-container{
         display: block;
+    }
+    .signup-container{
+        padding: 0 8% 0 8%;
     }
     .welcome-logo{
         justify-content: center;
@@ -249,5 +277,96 @@ font-weight: 700;
     font-size: 20px;
     font-weight: 600;
     }
-    
+    /* signup on 600px and below */
+    .signup-container .welcome-form{
+        margin-top: 20%;
+    }
+    .no-display-sm{
+        display: none;
+    } 
+    .signup-wlc{
+        display: block;
+        color: #000100;
+text-align: center;
+font-family: Lato;
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 0.4px;
+margin-top:50px ;
+margin-bottom: 55px;
+    }
+}
+
+/* styling for the doctor.html/find a doctor page */
+.doctor-body{
+    margin: 4% 6%;
+}
+.doctor-logo{
+    display: inline-flex;
+    align-items: center;
+    background-color: #284CCC;
+    width: fit-content;
+    height: 55px;
+ padding: 0;
+    margin: 0;
+}
+.doctor-logo img{
+    height: 52px;
+}
+.doctor-logo p{
+color: #FFF;
+font-family: 'Lato', sans-serif;
+font-size: 48px;
+font-weight: 800;
+}
+.doctor-body input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    background: #BAB5E1;
+    padding: 15px 5px;
+    color: #828282;
+}
+form{
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+form img{
+position: absolute;
+right: 20px;
+bottom: 10px;
+}
+.doc-types{
+    background-color: #284CCC;
+    padding: 0 5px;
+    margin-top: 3%;
+
+}
+.doc-types div{
+    display: flex;
+    justify-content: space-between;
+}
+.doc-types div p{
+    font-family: Lato;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #000100;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+}
+.doc-types div + p{
+    margin-top: 4%;
+font-family: Lato;
+font-size: 24px;
+font-weight: 800;
+}
+.doc-info{
+    background-color: #284CCC;
+    display: flex;
+    justify-content: space-between;
+}
+.doc-info .dr{
+    display: flex;
 }
