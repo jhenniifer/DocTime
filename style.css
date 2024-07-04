@@ -149,6 +149,110 @@ font-weight: 400;
     color: #B8B8B8;
     text-decoration: underline;
 }
+/* this is where home page starts from*/ 
+.sections{
+    display: flex;
+    width: 100%;
+}
+.r1{
+    display: block;
+    width: 25%;
+    background-color: blue;
+    text-align: left;
+ 
+}
+.w1{
+    display: block;
+    color: white;
+    padding: 5%;  
+    width: 75%;  
+    border-radius: 5px;
+}
+
+.w1:hover{
+    background-color: white;
+    color: blue;
+}
+.w2{
+    padding-top: 50%;
+    color: red;
+}
+.r2{
+    display: block;
+    width: 50%;
+    background-color: white;
+    margin: 2%;
+    
+
+}
+.good{
+    font-weight: bold;
+}
+.q1{
+    text-align: left;
+    background-color: blue;
+    border-radius: 5px;  
+}
+.q1a{
+    color: white;
+}
+.q1b{
+    display:flex;
+    width: 100%;  
+    font-size: larger;
+    justify-content: space-between;
+}
+.q1b1{
+    background-color: rgba(228, 202, 155, 0.986);
+    
+    width: 33%;
+        
+}
+.q1b2{
+    background-color:  rgba(228, 202, 155, 0.986);
+   
+    width: 33%;
+}
+.q1b3{
+    background-color: rgba(228, 202, 155, 0.986);
+   
+    width: 33%;
+}
+.qtext{
+    color: red;
+    padding-top: 5%;
+}
+.r3{
+    display: block;
+    width: 25%;
+    background-color: white;
+    padding: 1%;
+}
+.appoint{
+    background-color: blue;
+    width: 60%;
+    color: white;
+    border-radius: 10%;
+    font-weight: bolder;
+    text-align: center;
+   
+}
+.calen{
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(241, 238, 210);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.calentx{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table{
+    width: 100%;
+}
+/* this is where home page end*/ 
+
 
 /*media query styling for the welcome 0r signin page and the signup page*/
 
