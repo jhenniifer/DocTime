@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+.home-body{
+    height: 100vh;
+}
+.home-container, .menu-logo{
+    display: flex;
+}
+aside{
+    background-color: #284CCC;
+    height: 100vh;  
+    width: 20%; 
+    /*  */
+}
+form, nav, #log-out{
+    padding-left:10%;
+}
+.menu-logo p{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800; 
+}
+input{
+    margin: auto;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 15px 5px 15px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.30);
+    color: #FFF;
+    font-size: 20px;
+}
+input:placeholder-shown{
+color: #FFF;
+font-family: Inter;
+font-size: 22px;
+padding-left: 15%;
+font-weight: 500;
+
+}
+form{
+    position: relative;
+}
+form img{
+    position: absolute;
+    left: 13%;
+    bottom: 38%;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+font-family: Inter;
+font-size: 22px;
+font-weight: 500;
+margin-bottom: 10%;
+display: flex;
+align-items: center;
+}
+li{
+    list-style: none;
+}
+a img{
+    margin-right: 10px;
+}
+a:active, a:hover ,a:focus {
+    background-color: #dae0f2;
+    color: #284CCC;
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 85%;
+}
+.home{
+    background-color: #dae0f2;
+    color: #284CCC;
+    border-radius: 10px;
+    padding: 10px 5px;  
+    width: 85%;
+}
+#log-out{
+    margin-top: 85%;
+}
+#log-out a{
+    color:#FF0000;
+}
+main{
+    margin: 2%;
+    display: flex;
+}
+ .vitals{
+    display: flex;
+    gap: 10px;
+}
