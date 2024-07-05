@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /*styling for the welcome 0r signin  and the sign up page*/
 /* They have very similar designs hence */
 
@@ -182,8 +182,6 @@ font-weight: 400;
     width: 50%;
     background-color: white;
     margin: 2%;
-    
-
 }
 .good{
     font-weight: bold;
@@ -204,18 +202,14 @@ font-weight: 400;
 }
 .q1b1{
     background-color: rgba(228, 202, 155, 0.986);
-    
-    width: 33%;
-        
+    width: 33%;     
 }
 .q1b2{
     background-color:  rgba(228, 202, 155, 0.986);
-   
     width: 33%;
 }
 .q1b3{
     background-color: rgba(228, 202, 155, 0.986);
-   
     width: 33%;
 }
 .qtext{
@@ -336,7 +330,6 @@ font-weight: 400;
     .welcome-body{
         background-size: cover;
     }
-    
    .welcome-logo span{
         font-size: 48px;
         font-weight: 600;
@@ -404,6 +397,7 @@ margin-bottom: 55px;
 /* styling for the doctor.html/find a doctor page */
 .doctor-body{
     margin: 4% 6%;
+    font-family: 'lato', sans-serif;
 }
 .doctor-logo{
     display: inline-flex;
@@ -419,7 +413,6 @@ margin-bottom: 55px;
 }
 .doctor-logo p{
 color: #FFF;
-font-family: 'Lato', sans-serif;
 font-size: 48px;
 font-weight: 800;
 }
@@ -452,7 +445,6 @@ bottom: 10px;
     justify-content: space-between;
 }
 .doc-types div p{
-    font-family: Lato;
     border: 1px solid transparent;
     border-radius: 5px;
     background-color: #000100;
@@ -462,15 +454,113 @@ bottom: 10px;
 }
 .doc-types div + p{
     margin-top: 4%;
-font-family: Lato;
 font-size: 24px;
 font-weight: 800;
 }
 .doc-info{
     background-color: #284CCC;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    font-size: 24px;
+    color: #FFF;
+    margin-bottom: 5%;
 }
+
 .doc-info .dr{
     display: flex;
 }
+.dr div{
+    margin-top: auto;
+    margin-left: 30px;
+    font-size: 24px;
+    color: #FFF;
+}
+.dr div p:first-child{
+    margin-bottom: 5px;
+}
+.dr div p:last-child{
+    margin-top: 35px;
+}
+.dr + div{
+    width: 20%;
+    margin-left: auto;
+}
+.hospital-icon, .doc-info button {
+  margin-left: 60%;
+ 
+}
+.doc-info #active{
+    color: #FFF;
+    background-color:black;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 10px;
+}
+.doc-info button{
+    color:#fff;
+    background-color: rgba(255, 255, 255, .3);
+    
+    padding: 10px 15px;
+    border:none;
+    border-radius: 10px;
+}
+.doc-info button:hover{
+    background-color: transparent;
+    text-decoration: underline;
+    color: #000100;
+}
+
+/* styling for the faq page */
+.faq-body{
+    background-color:#D1CEEB;
+    font-family: "Inter", sans-serif;
+}
+.faqs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;   
+}
+
+.faq-body h3{
+    color: #000;
+font-size: 64px;
+font-weight: 700;
+text-align: center;
+margin: 25px;
+}
+.faqs select{
+    padding: 20px 20px;
+    margin-bottom: 4%;
+    font-size: 30px;
+    font-weight: 400;    
+}
+
+/* mediaquery for the faq page */
+@media (max-width: 767px) {
+    .faq-body h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    }
+    /* .faqs{
+        word-break: break-all;
+    } */
+    .faqs select{
+        padding: 20px 20px;
+        margin-bottom: 15%;
+        font-size: 16px;
+        font-weight: 700;   
+        max-width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+        word-wrap: break-word;
+        
+    }
+    /* .faqs option{
+        /* overflow-wrap: break-word; */
+        /* white-space:pre-wrap;
+    } */
+} */
+
