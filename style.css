@@ -405,6 +405,50 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+.monthandweek{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+
+}
+.MON{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+.TUES{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+.WED{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+.THUR{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+.Read{
+    width: 175px;
+    height: 35px;
+    border-radius: 10px;
+    //padding-left: 600px;
+    background-color: #284CCC;   
+
+}
+.readmore{
+color: #FFFFFF;
+font-family: Inter;
+font-size: 23px;
+font-weight: 500;
+line-height: 29.05px;
+text-align: center;
+
+}
 .calen{
 display: flex;
 width: 220px;
