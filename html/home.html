@@ -15,7 +15,7 @@
           <p>DocTime</p>
         </div>
         <form action="">
-          <input type="search" placeholder="Search" />
+          <input type="search" onclick="navigateToDoctors(event)" placeholder="Search" />
           <img src="/assets/icons/search.png" alt="" />
         </form>
         <nav>
@@ -50,10 +50,13 @@
       </aside>
       <main>
         <div>
-          <p>Good Morning Yvette, <span> How are you feeling today?</span></p>
-          <div>
+          <p class="gm">
+            Good Morning Yvette, <span> How are you feeling today?</span>
+          </p>
+          <div class="queue">
             <p>
-              SKIP THE QUEUE BOOK AN APPOINTMENT TODAY!
+              SKIP THE QUEUE <br />
+              BOOK AN APPOINTMENT TODAY!
               <span>
                 An apple a day is great , but a check-up keeps the surprises
                 away.</span
@@ -62,7 +65,19 @@
             <img src="/assets/images/doctor.png" alt="" />
           </div>
           <div>
-            <p>Vitals</p>
+            <p
+              style="
+                color: #000100;
+                font-family: Lato;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 25px 0 7px 0;
+              "
+            >
+              Vitals
+            </p>
             <div class="vitals">
               <div>
                 <p>Body Temp</p>
@@ -78,11 +93,21 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="water-tracker">
             <p>Water Tracker</p>
             <div class="mon-week">
-              <div><span>Month</span> <span class="underline">JULY</span></div>
-              <div><span>Week</span> <span class="underline">IST</span></div>
+              <div>
+                <span>Month</span>
+                <span class="underline"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JULY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                >
+              </div>
+              <div>
+                <span>Week</span>
+                <span class="underline"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1ST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                >
+              </div>
             </div>
             <div class="water">
               <div class="days">
@@ -93,7 +118,8 @@
                 <img src="/assets/icons/water_ful.png" alt="" />
                 <img src="/assets/icons/water_ful.png" alt="" />
                 <img src="/assets/icons/water_ful.png" alt="" />
-                <img src="/assets/icons/water_ful.png" alt="" /><img
+                <img src="/assets/icons/water_ful.png" alt="" />
+                <img
                   src="/assets/icons/water_full.png"
                   alt=""
                 />
@@ -138,7 +164,9 @@
                 />
               </div>
             </div>
-            <button>Read more <img src="/assets/icons/arrow_drop_down.png" alt=""></button>
+            <button>
+              Read more <img src="/assets/icons/arrow_drop_down.png" alt="" />
+            </button>
           </div>
         </div>
         <div>
@@ -146,5 +174,6 @@
         </div>
       </main>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
