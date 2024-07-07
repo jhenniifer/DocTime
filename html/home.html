@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+   
     <link rel="stylesheet" href="/css/home.css" />
     <title>Home</title>
   </head>
   <body>
     <div class="home-container">
-      <aside>
+      <aside id="aside">
         <div class="menu-logo">
           <img src="/assets/images/Health Calendar.png" alt="" />
           <p>DocTime</p>
         </div>
         <form action="">
-          <input type="search" onclick="navigateToDoctors(event)" placeholder="Search" />
+          <input
+            type="search"
+            onclick="navigateToDoctors(event)"
+            placeholder="Search"
+          />
           <img src="/assets/icons/search.png" alt="" />
         </form>
         <nav>
@@ -26,7 +30,7 @@
               >
             </li>
             <li>
-              <a href="#"
+              <a href="okoro.html"
                 ><img src="/assets/icons/add_notes.png" alt="" />Appointments</a
               >
             </li>
@@ -119,10 +123,7 @@
                 <img src="/assets/icons/water_ful.png" alt="" />
                 <img src="/assets/icons/water_ful.png" alt="" />
                 <img src="/assets/icons/water_ful.png" alt="" />
-                <img
-                  src="/assets/icons/water_full.png"
-                  alt=""
-                />
+                <img src="/assets/icons/water_full.png" alt="" />
               </div>
               <div class="days">
                 <p>TUES</p>
@@ -169,10 +170,160 @@
             </button>
           </div>
         </div>
-        <div>
-          <a href="#">BOOK APPOINTMENT</a>
+        <div class="third">
+          <a href="#" class="book-appt">BOOK APPOINTMENT</a>
+          <div class="calendar">
+            <div class="header">July</div>
+            <div class="weekdays">
+              <div>07</div>
+              <div>Mo</div>
+              <div>Tu</div>
+              <div>We</div>
+              <div>Th</div>
+              <div>Fr</div>
+              <div class="blue">Sa</div>
+              <div class="blue">Su</div>
+            </div>
+            <div class="dayss">
+              <div class="white">27</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div class="blue">6</div>
+              <div class="blue">7</div>
+              <div class="white">28</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>12</div>
+              <div class="blue">13</div>
+              <div class="blue">14</div>
+              <div class="white">29</div>
+              <div>15</div>
+              <div>16</div>
+              <div>17</div>
+              <div class="selected">18</div>
+              <div>19</div>
+              <div class="blue">20</div>
+              <div class="blue">21</div>
+              <div class="white">30</div>
+              <div>22</div>
+              <div>23</div>
+              <div>24</div>
+              <div>25</div>
+              <div>26</div>
+              <div class="blue">27</div>
+              <div class="blue">28</div>
+              <div class="white">31</div>
+              <div>29</div>
+              <div>30</div>
+              <div>31</div>
+              <div>1</div>
+              <div>2</div>
+              <div class="blue">3</div>
+              <div class="blue">4</div>
+              <div class="white">32</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div class="blue">10</div>
+              <div class="blue">11</div>
+            </div>
+          </div>
         </div>
       </main>
+    </div>
+    <!-- mobile view -->
+    <div id="mobile-view">
+      <div class="mobile-top">
+        <div><a href="" onclick="displayMenu(event)"><img src="/assets/icons/apps.png" alt="" /></a></div>
+        <div class="mobile-logo">
+          <img src="/assets/images/Health Calendar.png" alt="" />
+          <p>DocTime</p>
+        </div>
+        <img src="/assets/icons/search 2.png" alt="" />
+      </div>
+      <div class="mobile-btn">
+        <button>BOOK APPOINTMENT</button>
+        <button>
+          WATER TRACKER &nbsp;<img src="/assets/icons/water_full white.png" alt="" />
+        </button>
+      </div>
+      <p>
+        Good Morning Yvette,
+        <span>How are you feeling today?</span>
+      </p>
+      <div class="queue-mobile">
+        <p>
+          SKIP THE QUEUE <br />
+          BOOK AN APPOINTMENT TODAY!
+          <span >
+            An apple a day is great , but a check-up keeps the surprises
+            away.</span
+          >
+        </p>
+        <img src="/assets/images/doctor.png" alt="" />
+      </div>
+      <div>
+        <p
+          style="
+            color: #000100;
+            font-family: Lato;
+            font-size: 30px;
+            font-weight: 500;
+            margin: 25px 0 7px 10px;
+          "
+        >
+          Vitals
+        </p>
+        <div class="vitalsmob-container">
+          <div class="vitals-mobile">
+            <p>Body Temp</p>
+            <p>36.1 c</p>
+          </div>
+          <div class="vitals-mobile">
+            <p>Pulse</p>
+            <p>83 bpm</p>
+          </div>
+          <div class="hide-vital class="vitals"">
+            <p>Blood Pressure</p>
+            <p>125/82 mm/Hg</p>
+          </div>
+          <div>
+            <img src="/assets/icons/arrow_forward_ios.png" class="arrow" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="next-appt">
+        <p>Next Appointment</p>
+        <div class="np-border">
+          <div class="okoro-mobile">
+          <img src="/assets/images/Frame 2 small.png" alt="" />
+          <div>
+            <p>Dr. Okoro John</p>
+            <p>A Pediatrician <br> 12 yrs working experience</p>
+          </div>
+          </div>
+          <div class="hr"></div>
+          <div class="mobile-time">
+            <p>Thurs 18 July</p>
+            <p>02:00PM</p>
+          </div>
+        </div>
+        </div>
+        <footer class="foot-menu">
+          <a href="home.html" "><img src="/assets/icons/add_home_work.png"" alt=""></a>
+          <a href="/html/doctors.html"><img src="/assets/icons/calendar_month.png" alt=""></a>
+          <a href="/html/okoro.html"><img src="/assets/icons/add_notes blue.png" alt=""></a>
+          <a href="#"><img src="/assets/icons/settings blue.png" alt=""></a>
+        </footer>
+      </div>
+     
     </div>
     <script src="/script.js"></script>
   </body>

@@ -5,9 +5,9 @@
     }
     .mainn{
         background: #284CCC;
-        //width: 1440px;
-        //height: 2109px;
-        ;
+        /* width: 1440px;
+        height: 2109px;
+        ; */
     }
     .lg{
         display: inline-flex;
@@ -27,8 +27,8 @@
     background-color: #DAE0F2;
     top: 91px;
     bottom: 92px;
-    margin-left: 120px;
-    margin-bottom: 92px;
+    margin-left: 5%;
+    margin-bottom: 5%;
     gap: 0px;
     border-radius: 50px 0px 0px 0px;
     opacity: 0px;

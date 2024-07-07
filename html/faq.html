@@ -1,35 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/faq.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/faq.css" />
 
     <title>FAQ</title>
-</head>
-<body class="faq-body">
-    <h3>FAQs</h3>
-    <div class="faqs">
-        <select name="" id="">
-            <option value="">What is the need for a Healthcare App?</option>
-        </select>
-        <select name="" id="">
-            <option value="">What are the various types of Healthcare Apps?</option>
-        </select>
-        <select name="" id="">
-            <option value="">How do I access a Healthcare App?</option>
-        </select>
-        <select name="" id="">
-            <option value="">What is the Benefits of Mobile Technology in Healthcare?</option>
-        </select>
-        <select name="" id="">
-            <option value="">What are the features of DocTime Mobile App?</option>
-        </select>
-        <select name="" id="">
-            <option value="">What are the Popular Reasons for Healthcare App Failures?</option>
-        </select>
+  </head>
+  <body class="faq-body">
+    <div class="mobile-top">
+     <div> <a href="#" onclick="backBtn(event)"><img
+        src="/assets/icons/arrow_back_ios.png"
+        style="width: 20px;
+        height: 32px;
+       "
+        alt=""
+      /> </a></div>
+      <div class="mobile-logo">
+        <img src="/assets/images/Health Calendar.png" alt="" />
+        <p style="color: #284CCC;
+        font-family: Lato;
+        font-size: 32px;
+       font-weight: 800;">DocTime</p>
+      </div>
+      <img src="/assets/icons/search 2.png" style="width: 38px;
+      height: 38px;
+      flex-shrink: 0;"  alt="" />
     </div>
-    
-</body>
+    <aside>
+      <div class="menu-logo">
+        <img
+          src="/assets/images/Health Calendar.png"
+          style="width: 68px; height: 52px"
+          alt=""
+        />
+        <p>DocTime</p>
+      </div>
+      <form action="">
+        <input
+          type="search"
+          onclick="navigateToDoctors(event)"
+          placeholder="Search"
+        />
+        <img src="/assets/icons/search.png" alt="" />
+      </form>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html" class="home"
+              ><img src="/assets/icons/add_home_work white.png" alt="" />
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="okoro.html"
+              ><img src="/assets/icons/add_notes.png" alt="" />Appointments</a
+            >
+          </li>
+          <li>
+            <a href="/html/faq.html" class="faq-link"
+              ><img src="/assets/icons/quiz blue.png" alt="" />FAQs</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/settings.png" alt="" />Settings</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="log-out">
+        <a href="/index.html"
+          ><img src="/assets/icons/logout.png" alt="" />Logout</a
+        >
+      </div>
+    </aside>
+
+    <div>
+      <h3>FAQs</h3>
+      <div class="faqs">
+        <select name="" id="">
+          <option value="">What is the need for a Healthcare App?</option>
+        </select>
+        <select name="" id="">
+          <option value="">
+            What are the various types of Healthcare Apps?
+          </option>
+        </select>
+        <select name="" id="">
+          <option value="">How do I access a Healthcare App?</option>
+        </select>
+        <select name="" id="">
+          <option value="">
+            What is the Benefits of Mobile Technology in Healthcare?
+          </option>
+        </select>
+        <select name="" id="">
+          <option value="">What are the features of DocTime Mobile App?</option>
+        </select>
+        <select name="" id="">
+          <option value="">
+            What are the Popular Reasons for Healthcare App Failures?
+          </option>
+        </select>
+      </div>
+      <footer class="foot-menu">
+        <a href="home.html"
+          ><img src="/assets/icons/add_home_work.png" alt=""
+        /></a>
+        <a href="#"><img src="/assets/icons/calendar_month.png" alt="" /></a>
+        <a href="/html/okoro.html"
+          ><img src="/assets/icons/add_notes blue.png" alt=""
+        /></a>
+        <a href="#"><img src="/assets/icons/settings blue.png" alt="" /></a>
+      </footer>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
