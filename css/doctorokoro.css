@@ -206,6 +206,9 @@
     font-weight: 400;
     line-height: 150%;
     }
+    .foot-menu{
+        display: none;
+       }
     
     .footer{
         display: flex;
@@ -259,20 +262,29 @@
         }
         .padic{
             display: flex;
-            text-align: ;
+            /* text-align: ; */
         }
         .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
         font-size: 19px;
         }
-        .footer{
-            background-color: #DAE0F2;
-           
-        }
+      
     }
+    
     
     /* for screen below iphone 14promax 430px by 932px */
     
     @media (max-width: 430px) {
+        .foot-menu{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 7%;
+                background-color: #dae0f2;
+                padding-top: 10px;
+                border-top: transparent;
+                box-shadow:inset rgba(0, 0, 0, .1) .1px 2px;
+                position: sticky;
+                bottom: 0;
+        }
         .mainn{
         background-color: #DAE0F2;  
     }
@@ -315,7 +327,7 @@
         }
         .padic{
             display: flex;
-            text-align: ;
+            /* text-align: ; */
         }
         .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
         font-size: 23px;
@@ -440,7 +452,7 @@
     }
     
     /* media query from 900px up */
-    @media (min-0width: 900px) and (max-width: 2150px) {
+    @media (min-width: 900px) and (max-width: 2150px) {
         .mainn{
        
         background-color: #284CCC;
