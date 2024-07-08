@@ -8,6 +8,26 @@
     <title>Find a Doctor</title>
   </head>
   <body class="doctor-body">
+    <div class="mobile-top">
+      <div> <a href="#" onclick="backBtn(event)"><img
+         src="/assets/icons/arrow_back_ios.png"
+         style="width: 20px;
+         height: 32px;
+        "
+         alt=""
+       /> </a></div>
+       <div class="mobile-logo">
+         <img src="/assets/images/Health Calendar.png" alt="" />
+         <p style="color: #284CCC;
+         font-family: Lato;
+         font-size: 32px;
+        font-weight: 800;">DocTime</p>
+       </div>
+       <div> <a href="/html/doctors.html">
+       <img src="/assets/icons/search 2.png" style="width: 38px;
+       height: 38px;
+       flex-shrink: 0;"  alt=""/></a></div>
+     </div>
     <div class="doctor-logo">
       <img src="/assets/images/Health Calendar.png" alt="" />
       <p>DocTime</p>
@@ -21,13 +41,14 @@
         <p>Surgeon</p>
         <p>Oncologist</p>
         <p>Pediatrician</p>
-        <p>Psychiatrist</p>
-        <p>Radiologist</p>
-        <p>Gynecologists</p>
-        <p>Ophthalmology</p>
-        <p>Pathologist</p>
+        <p class="hide-xs">Psychiatrist</p>
+        <p class="hide-xs">Radiologist</p>
+        <p class="hide-sm">Gynecologists</p>
+        <p class="hide-sm">Ophthalmology</p>
+        <p class="hide-sm">Pathologist</p>
       </div>
-      <p>RECENT</p>
+      <p class="hide-sm">RECENT</p>
+      <p class="all">ALL</p>
     </div>
     <main>
       <div class="doc-info">
@@ -93,6 +114,49 @@
           <button>CLICK</button>
         </div>
       </div>
+
+      <div class="doc-info">
+        <div class="dr">
+          <img src="/assets/images/dr 5.png " alt="" />
+          <div>
+            <p>Dr. Ijeoma</p>
+            <span>An Ophthalmologist </span>
+            <p>11 years working experience</p>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/icons/openmoji_hospital.png" alt=""  class="hospital-icon"/>
+          <p>Federal Medical Centre, Imo state.</p>
+          <button>CLICK</button>
+        </div>
+      </div>
+
+      <div class="doc-info">
+        <div class="dr">
+          <img src="/assets/images/dr 6.png " alt="" />
+          <div>
+            <p>Dr. Ade</p>
+            <span>A Gynecologists</span>
+            <p>25 years working experience</p>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/icons/openmoji_hospital.png" alt=""  class="hospital-icon"/>
+          <p>Eko Hospitals          </p>
+          <button>CLICK</button>
+        </div>
+      </div>
     </main>
+    <footer class="foot-menu">
+      <a href="home.html"
+        ><img src="/assets/icons/add_home_work.png" alt=""
+      /></a>
+      <a href="/html/okoro.html"><img src="/assets/icons/calendar_month.png" alt="" /></a>
+      <a href="/html/faq.html"
+        ><img src="/assets/icons/quiz blue.png" alt=""
+      /></a>
+      <a href="/html/settings.html"><img src="/assets/icons/settings blue.png" alt="" /></a>
+    </footer>
+  </div>
   </body>
 </html>
