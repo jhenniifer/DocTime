@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+    }
+    .mainn{
+        background: #284CCC;
+    }
+    .iconhub{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-evenly;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .lg{
+        display: inline-flex;
+        width: auto;
+        height: 35px;
+        left: 50px;
+      
+    }
+    .lg img{
+        height: 45px;
+    }
+    .lg p{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 800;
+    }
+    .layer{
+    background-color: #DAE0F2;
+    top: 91px;
+    margin-left: 120px;
+    gap: 0px;
+    border-radius: 50px 0px 0px 0px;
+    opacity: 0px;
+    flex-shrink: 0;
+    }
+    
+    .appointsection{
+        display: flex;
+        padding-left: 440px;
+        padding-top: 97px;
+       
+    }
+    .myapp{
+    display: inline-flex;
+    height: 76px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 12px 0px 0px 12px;
+    border: 1px solid #284CCC;
+    background: #284CCC;
+        
+     }
+     .myapptext{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+        
+    }
+    .Drok{
+    text-align: left;
+    display: inline-flex;
+    height: 76px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 0px 12px 12px 0px;
+    border: 1px solid #284CCC;
+    background: #DAE0F2;
+    
+    }
+    .Droktext{
+    color: #403D3F;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    opacity: 0.3;
+      }
+    .okph{
+        padding-left: 466px;
+        padding-top: 58px;
+        
+    }
+    .okorophoto{
+        width: 355px;
+        height: 396px;
+        flex-shrink: 0;
+        border-radius: 200px;
+        background:lightgray 50% / cover no-repeat, #673D3D;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .name{
+    padding-top: 13px;
+    padding-left: 410px;
+    }
+    .nametxt{
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    }
+    .writes{
+    padding-top: 71px;
+    padding-left: 35px;
+    }
+    .padic{
+    display: flex;
+    }
+    .locat{
+    display: flex;
+    padding-top: 50px;
+    
+    }
+    .Specialty{
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .loca{
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .pro{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .edu{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .areas{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .proa{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .resp{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .pininterest{
+    padding-top: 50px;
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 48px */
+    }
+    .txts{
+    color: #000;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content:space-evenly;
+        background-color: #284CCC;  
+        align-items: center;
+        width: 100%;
+        /* height: 87px; */
+        /* gap: 20em;  */
+    
+    }
+    
+    /* Media query for screen below 375px iphone SE */
+    @media (max-width: 375px) {
+        .mainn{
+        background-color: #DAE0F2;  
+    }
+        .layer{
+        flex-shrink: 0;
+        background-color: #284CCC;
+        width: 375px;
+        margin-left: 10px;
+        margin-bottom: 0px;  
+        }
+        .lg{
+            justify-content: center;
+            align-items: center;
+            padding-left: 17%;
+          
+        }
+        .txts{
+            color: white;
+            font-size: 18px;
+    
+               }
+        .okph{
+            padding: 0;
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .okorophoto{ 
+            width: 50px;
+            height: 50px;
+        
+        }
+        .name{
+            padding-top: 350px;
+             text-align: center;
+            padding-left: 0;
+        }
+        .padic{
+            display: flex;
+            text-align: ;
+        }
+        .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
+        font-size: 19px;
+        }
+        .footer{
+            background-color: #DAE0F2;
+           
+        }
+    }
+    
+    /* for screen below iphone 14promax 430px by 932px */
+    
+    @media (max-width: 430px) {
+        .mainn{
+        background-color: #DAE0F2;  
+    }
+    
+        .layer{
+        flex-shrink: 0;
+        background-color: #284CCC;
+        width: 430px;
+        margin-left: 15px;
+        /* margin-bottom: 78px;   */
+        }
+        .lg{
+            justify-content: center;
+            align-items: center;
+            padding-left: 17%;
+          
+        }
+        .txts{
+            color: white;
+            font-size: 20px;
+    
+               }
+        .okph{
+            padding: 0;
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .okorophoto{ 
+            width: 50px;
+            height: 50px;
+            padding-left: 25px;
+            box-shadow: none;
+        
+        }
+        .name{
+            padding-top: 350px;
+            text-align: center;
+            padding-left: 0;
+        }
+        .padic{
+            display: flex;
+            text-align: ;
+        }
+        .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
+        font-size: 23px;
+        }
+        .footer{
+            background-color: #DAE0F2;
+           
+        }
+    
+    }
+    
+    /* media query for 430px up */
+    @media (min-width: 431px) and (max-width: 900px) {
+        .mainn{
+       
+        background-color: #284CCC;
+    }
+    .footer{
+        background-color: #284CCC;
+    }
+        .layer{
+        flex-shrink: 0;
+        background-color: #DAE0F2;  
+        width: 850px;
+        margin-left: 45px;
+        /* margin-bottom: 88px;   */
+        }
+        .lg{
+            justify-content: center;
+            align-items: center;
+            padding-left: 30%;
+          
+        }
+        .txts{
+            color: black;
+            font-size: 20px;
+    
+               }
+        .okph{
+            padding: 0;
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .okorophoto{ 
+            width: 50px;
+            height: 50px;
+            padding-left: 230px;
+            padding-top: 20px;
+            box-shadow: none;
+        
+        }
+        .name{
+            padding-top: 370px;
+            text-align: center;
+            padding-left: 0;
+        
+        }
+        .padic{
+            display: flex;
+           
+        }
+        .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
+        font-size: 20px;
+        }
+    }
+    
+    /* qwery for600px up */
+    @media (min-width: 600px) and (max-width: 900px) {
+        .mainn{
+       
+        background-color: #284CCC;
+    }
+    .footer{
+        background-color: #284CCC;
+    }
+        .layer{
+        flex-shrink: 0;
+        background-color: #DAE0F2;  
+        width: 850px;
+        margin-left: 45px;
+        /* margin-bottom: 88px;   */
+        }
+        .lg{
+            justify-content: center;
+            align-items: center;
+            padding-left: 30%;
+          
+        }
+        .txts{
+            color: black;
+            font-size: 20px;
+    
+               }
+        .okph{
+            padding: 0;
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .okorophoto{ 
+            width: 50px;
+            height: 50px;
+            padding-left: 230px;
+            padding-top: 20px;
+            box-shadow: none;
+        
+        }
+        .name{
+            padding-top: 370px;
+            text-align: center;
+            padding-left: 0;
+        
+        }
+        .padic{
+            display: flex;
+           
+        }
+        .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
+        font-size: 20px;
+        }
+    }
+    
+    /* media query from 900px up */
+    @media (min-0width: 900px) and (max-width: 2150px) {
+        .mainn{
+       
+        background-color: #284CCC;
+    }
+    .footer{
+        background-color: #284CCC;
+    }
+        .layer{
+        flex-shrink: 0;
+        background-color: #DAE0F2;  
+        width: 920px;
+        margin-left: 70px;
+        margin-bottom: 100px;  
+        }
+        .lg{
+            justify-content: center;
+            align-items: center;
+            padding-left: 30%;
+          
+        }
+        .txts{
+            color: black;
+            font-size: 20px;
+    
+               }
+        .okph{
+            padding: 0;
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .okorophoto{ 
+            width: 50px;
+            height: 50px;
+            padding-left: 400px;
+            padding-top: 20px;
+            box-shadow: none;
+        
+        }
+        .name{
+            padding-top: 370px;
+            text-align: center;
+            padding-left: 0;
+        
+        }
+        .padic{
+            display: flex;
+           
+        }
+        .Specialty, .resp, .pininterest, .pro, .areas, .proa, .edu, .nametx {
+        font-size: 28px;
+        }
+    }
+    
