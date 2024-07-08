@@ -21,7 +21,7 @@ aside{
     background-color: #284CCC;
     font-family: "lato", sans-serif;
     /* height: max-content;   */
-    width: 25%; 
+    width: 22%; 
 }
 .menu-logo{
     display: flex;
@@ -79,7 +79,7 @@ li{
 a img{
     margin-right: 10px;
 }
-a:active, a:hover {
+a:hover {
     background-color: #dae0f2;
     color: #284CCC;
     border-radius: 10px;
@@ -102,7 +102,7 @@ a:active, a:hover {
 .faqs{
     display: flex;
     flex-direction: column;
-    width: 120%;
+    width: 100%;
     margin-left: 7%;
     /* margin: auto;    */
     font-family: "inter", sans-serif;

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+     <link rel="stylesheet" href="/css/settings.css">
+    <title>Settings</title>
+</head>
+<body>
+  <div class="back-btn">
+    <a href="" onclick="backBtn(event)"><img src="/assets/icons/Back.png" class="hide-lg" alt=""></a>
+  </div>
+    <div class="settings-body">
+    
+        <aside id="aside">
+            <div class="menu-logo">
+              <img src="/assets/images/Health Calendar.png" alt="" />
+              <p>DocTime</p>
+            </div>
+            <form action="">
+              <input
+                type="search"
+                onclick="navigateToDoctors(event)"
+                placeholder="Search"
+              />
+              <img src="/assets/icons/search.png" alt="" />
+            </form>
+            <nav>
+              <ul>
+                <li>
+                  <a href="home.html" class="home"
+                    ><img src="/assets/icons/add_home_work white.png" alt="" /> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="okoro.html"
+                    ><img src="/assets/icons/add_notes.png" alt="" />Appointments</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/faq.html"
+                    ><img src="/assets/icons/quiz.png" alt="" />FAQs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="settings"
+                    ><img src="/assets/icons/settings blue.png" alt="" />Settings</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div id="log-out">
+              <a href="/index.html"
+                ><img src="/assets/icons/logout.png" alt="" />Logout</a
+              >
+            </div>
+          </aside>
+          <main>
+<header class="top">
+    <h3>Settings</h3>
+    <form action="" id="settings-search">
+        <input type="search" placeholder="Search">
+        <img src="/assets/images/Search 3.png" alt="">
+    </form>
+</header>
+<nav>
+    <a href="#"> My details</a>
+    <a href="#" aria-current="page">Profile</a>
+    <a href="#">Password</a>
+    <a href="#">Team</a>
+    <a href="">Plan</a>
+    <a href="">Billing</a>
+    <a href="">Notification</a>
+    <a href="">Email</a>
+</nav>
+<div>
+    <p class="hide-lg profilee">Profile</p>
+    <p>Personal info</p>
+    <p>Update your photo and personal details here </p>
+    <div class="hide-sm">
+    <hr>
+    <div></div>
+    <hr>
+    </div>
+</div>
+<form action="" class="setting-form">
+    <div>
+        <label for="name">
+            Name
+        </label>
+        <input type="text" placeholder="Olivia">
+    </div>
+    <hr>
+    <div>
+        <label for="username">
+          Username
+        </label>
+        <input type="text" placeholder="Olivia">
+        <div class="hide-sm">
+<a href="#"> Delete &nbsp;</a> <a href="#"> &nbsp; Update</a>
+        </div>
+    </div>
+    <hr>
+</form>
+<div class="profile">
+    <div class="profile-card">
+        <div>
+            <p>Your photo</p>
+            <p>This will be displayed on your profile</p>
+        </div>
+        <img src="/assets/images/profile pic.png" alt="">
+    </div>
+    <div class="profile-card">
+        <div>
+            <p>Your bio</p>
+            <p>Write a short introduction</p>
+        </div>
+        <select name="text-type" id="">
+            <option value="">Normal text</option>
+            <option value="">Bold text</option>
+            <option value="">Italized text</option>
+        </select>
+        <div id="hide-sm">
+            <img src="/assets/icons/Bold.png" alt="">
+            <img src="/assets/icons/Italic.png" alt="">
+            <img src="/assets/icons/Align Right.png" alt="">
+            <img src="/assets/icons/Align Justify.png" alt="">
+        </div>
+    </div>
+    <div class="text-area">
+        <textarea name="" id="" cols="30" rows="5">I’m a product designer based in Nigeria. I specialized in UI/UX design, web developer and brand strategy and graphics designs. </textarea>
+        <p>250 character left</p>
+    </div>
+</div>
+          </main>
+        </div>
+        <footer class="foot-menu">
+          <a href="home.html" "><img src="/assets/icons/add_home_work.png"" alt=""></a>
+          <a href="/html/okoro.html"><img src="/assets/icons/calendar_month.png" alt=""></a>
+          <a href="/html/faq.html"><img src="/assets/icons/quiz blue.png" alt=""></a>
+          <a href="/html/settings.html"><img src="/assets/icons/settings blue.png" alt=""></a>
+        </footer>
+<script src="/script.js"></script>
+</body>
+</html>
